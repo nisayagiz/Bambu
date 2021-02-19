@@ -26,9 +26,13 @@ class _YardimState extends State<Yardim> {
       ),
       body: Center(
         child: RaisedButton(
+          color: Colors.deepOrangeAccent,
           onPressed: _openMessenger,
           child: Text(
-            'Bize yaz!'
+            'Bize yaz!',
+            style: TextStyle(
+              color: Colors.white,
+            ),
           ),
         ),
       ),

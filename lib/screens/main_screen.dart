@@ -28,7 +28,6 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   int _currentIndex = 0;
-
   final tabs = [
     Center(child: Text('BAMBU'),),
     Center(child: Text('Blog'),),

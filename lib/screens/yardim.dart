@@ -25,13 +25,27 @@ class _YardimState extends State<Yardim> {
         toolbarHeight: 75,
       ),
       body: Center(
-        child: RaisedButton(
-          color: Colors.deepOrangeAccent,
+        child: FlatButton(
           onPressed: _openMessenger,
-          child: Text(
-            'Bize yaz!',
-            style: TextStyle(
-              color: Colors.white,
+          child: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient( //https://owenhalliday.co.uk/flutter-gradient/
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: <Color> [
+                  Color(0xffFF6270), //I uploaded the Messenger App's photo to coolors.co
+                  Color(0xff7051FF), //https://coolors.co/ff6270-7051ff-0c91ff-ffffff
+                  Color(0xff0C91FF),
+                ],
+              ),
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 35, vertical: 20),
+            child: Text(
+              'Mesaj gönder.',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
